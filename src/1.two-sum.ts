@@ -27,13 +27,7 @@ function twoSum(nums: number[], target: number): number[] {
     let res: number[] = []
 
     for (let i = 0; i < nums.length; i++) {
-        if (hashMap[nums[i]]) {
-            if (nums[i] * 2 === target) {
-                return [hashMap[nums[i]], i];
-            }
-        } else {
-            hashMap[nums[i]] = i;
-        }
+        hashMap[nums[i]] = i;
     }
 
     for (let i = 0; i < nums.length; i++) {
