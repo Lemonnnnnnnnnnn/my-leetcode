@@ -6,8 +6,6 @@
 
 // @lc code=start
 function myAtoi(s: string): number {
-    if (s === "00000-42a1234") return 0
-
     s = replaceLeadingEmpty(s)
     let posi = true;
     if (s[0] === '-') {
